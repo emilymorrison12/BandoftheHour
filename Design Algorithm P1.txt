@@ -1,0 +1,38 @@
+﻿file:///Users/emilymorrison/Desktop/CSC120_SPRINTERM2024/src/Project1/Project1/BandoftheHour.html
+
+
+Design Algorithm
+1. Main method:
+   * Display a welcome message.
+   * Get the number of rows and validate it (between 1 and 10).
+   * Get the number of positions for each row and validate them (between 1 and 8).
+   * Create a 2D array to store musician weights (stands).
+   * Initialize all elements in stands to 0.
+   * Enter a loop that continues until the user chooses to exit.
+      * Display the menu: Add, Remove, Print, Exit.
+      * Get the user's choice and validate it (A/a, R/r, P/p, X/x).
+      * Call the appropriate function based on the user's choice.
+         * Add Musician: Call the addMusician function.
+         * Remove Musician: Call the removeMusician function.
+         * Print Assignment: Call the printAssignment function.
+   * Display an exit message.
+2. addMusician:
+   * Get the row letter and position number from the user.
+   * Validate the row letter (A-J) and position number (1-8).
+   * Check if the position is already occupied.
+      * If occupied, display an error message.
+   * Get the musician's weight and validate it (between 45 and 200).
+   * Calculate the total weight in the row.
+   * Check if adding the musician would exceed the weight limit (100kg per position).
+      * If the weight limit is exceeded, display an error message.
+   * Add the musician's weight to the corresponding element in the stands array.
+3. removeMusician:
+   * Get the row letter and position number from the user.
+   * Validate the row letter (A-J) and position number (1-8).
+   * Check if the position is vacant.
+      * If vacant, display an error message.
+   * Set the corresponding element in the stands array to 0.
+4. printAssignment:
+   * Iterate through each row:
+      * Calculate the total weight and average weight for the row.
+      * Print the row letter, weight of each position, total weight, and average weight.
